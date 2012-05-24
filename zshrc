@@ -40,3 +40,5 @@ eval "$(rbenv init - zsh)"
 
 alias b='bundle exec'
 alias reload='source ~/.zshrc'
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward
