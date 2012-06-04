@@ -40,5 +40,6 @@ eval "$(rbenv init - zsh)"
 
 alias b='bundle exec'
 alias reload='source ~/.zshrc'
+alias showme='qlmanage -p "$@" >& /dev/null'
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
