@@ -38,7 +38,17 @@ export PATH=$PATH:/usr/local/bin:/Users/evinicius/.bin:/Users/evinicius/.rvm/bin
 
 eval "$(rbenv init - zsh)"
 
-alias b='bundle exec'
+# Alias
+
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias psgrep="ps aux | egrep -v egrep | egrep"
+alias showip="curl http://f.simplesideias.com.br/ip.php; echo; ifconfig | grep broadcast | sed 's/.*inet \(.*\) netmask.*/\1/'"
+alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resources/CGSession -suspend"
+alias top="top -o rsize"
+alias make="make -j 2"
+alias cleanup="sudo rm -rf /private/var/log/asl/*"
+alias b="bundle exec"
 alias reload='source ~/.zshrc'
 alias showme='qlmanage -p "$@" >& /dev/null'
 bindkey "^[[A" history-search-backward
