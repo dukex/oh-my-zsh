@@ -34,10 +34,9 @@ plugins=(git bundler)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/Users/evinicius/.bin:/Users/evinicius/.rvm/bin:/usr/local/Cellar/bin/:/usr/local/homebrew/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/X11/bin:~/.rbenv/shims
 
-eval "$(rbenv init - zsh)"
-
+# PATH
+export PATH=/usr/local/bin:/Users/evinicius/.bin:/Users/evinicius/.rvm/bin:/usr/local/Cellar/bin/:/usr/local/homebrew/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/X11/bin:~/.rbenv/shims
 # Alias
 
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
@@ -51,5 +50,11 @@ alias cleanup="sudo rm -rf /private/var/log/asl/*"
 alias b="bundle exec"
 alias reload='source ~/.zshrc'
 alias showme='qlmanage -p "$@" >& /dev/null'
+
+# Config
+cdpath=(. ~ ~/code)
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+
+# RBenv
+eval "$(rbenv init - zsh)"
