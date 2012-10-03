@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh configuration.
+#
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
@@ -7,9 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="duke"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -50,6 +49,8 @@ alias cleanup="sudo rm -rf /private/var/log/asl/*"
 alias b="bundle exec"
 alias reload='source ~/.zshrc'
 alias showme='qlmanage -p "$@" >& /dev/null'
+alias gc='git commit -m "$@"'
+alias gfro='git fetch origin &&  git rebase origin/master'
 
 # Config
 cdpath=(. ~ ~/code)
