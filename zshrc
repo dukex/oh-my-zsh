@@ -60,3 +60,4 @@ bindkey "^[[B" history-search-forward
 
 # RBenv
 eval "$(rbenv init - zsh)"
+export PATH=$PATH:/usr/local/share/npm/bin
