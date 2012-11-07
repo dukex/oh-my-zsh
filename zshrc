@@ -35,7 +35,8 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # PATH
-export PATH=/usr/local/bin:/Users/evinicius/.bin:/Users/evinicius/.rvm/bin:/usr/local/Cellar/bin/:/usr/local/homebrew/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/X11/bin:~/.rbenv/shims
+export PATH=/usr/local/bin:/usr/local/Cellar/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:~/.rbenv/shims
+
 # Alias
 
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
