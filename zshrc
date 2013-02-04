@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # PATH
-export PATH=/usr/local/bin:/usr/local/Cellar/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:~/.rbenv/shims
+export PATH=/android-sdk/platform-tools:/android-sdk/tools:/usr/local/bin:/usr/local/Cellar/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/X11/bin:~/.rbenv/shims
 
 # Alias
 
