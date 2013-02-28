@@ -28,7 +28,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git bundler sublime vi-mode)
+plugins=(gitflow gitfast bundler vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,11 +47,9 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/user.menu/Contents/Resourc
 alias top="top -o rsize"
 alias make="make -j 2"
 alias cleanup="sudo rm -rf /private/var/log/asl/*"
-alias b="bundle exec"
 alias reload='source ~/.zshrc'
 alias showme='qlmanage -p "$@" >& /dev/null'
 alias gc='git commit -m "$@"'
-alias gfro='git fetch origin &&  git rebase origin/master'
 
 # Config
 cdpath=(. ~ ~/code)
