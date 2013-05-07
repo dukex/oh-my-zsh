@@ -25,4 +25,3 @@ alias reset='rake db:reset db:test:prepare db:bootstrap'
 alias -g RET='RAILS_ENV=test'
 alias -g REP='RAILS_ENV=production'
 alias -g RED='RAILS_ENV=development'
->>>>>>> b6ea876971b2270a2c73a07a6f6a337604132c6f
