@@ -6,6 +6,9 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=/android-sdk/platform-tools:/android-sdk/tools:/opt/play-2.1.0:/usr/local/share/npm/bin:$PATH
 
+export PATH=/android/sdk/platform-tools:/android/sdk/tools:$PATH
+export PATH=/opt/phonegap-2.7.0/lib/android/bin:$PATH
+
 # Alias
 
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
