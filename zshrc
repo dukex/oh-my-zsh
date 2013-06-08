@@ -19,6 +19,8 @@ alias cleanup="sudo rm -rf /private/var/log/asl/*"
 alias reload='source ~/.zshrc'
 alias showme='qlmanage -p "$@" >& /dev/null'
 alias gc='git commit -m "$@"'
+alias ep='open /android/eclipse/Eclipse.app'
+alias git-compare='git difftool -y -x "colordiff -y -W $COLUMNS" | less -R'
 
 # Config
 cdpath=(. ~ ~/code ~/code/github)
