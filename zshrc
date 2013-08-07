@@ -3,11 +3,14 @@ ZSH_THEME="duke"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 plugins=(rails3 sublime gitflow gitfast bundler vi-mode)
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /etc/bash_completion.d/todo
 
-export PATH=/android-sdk/platform-tools:/android-sdk/tools:/opt/play-2.1.0:/usr/local/share/npm/bin:$PATH
-
+export PATH=/usr/local/share/npm/bin:$PATH
 export PATH=/android/sdk/platform-tools:/android/sdk/tools:$PATH
 export PATH=/opt/phonegap-2.7.0/lib/android/bin:$PATH
+export PATH=$HOME/.ts/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Alias
 
@@ -23,6 +26,6 @@ alias ep='open /android/eclipse/Eclipse.app'
 alias git-compare='git difftool -y -x "colordiff -y -W $COLUMNS" | less -R'
 
 # Config
-cdpath=(. ~ ~/code ~/code/github)
+cdpath=(. ~ ~/code ~/code/github ~/code/bitbucket ~/code/labs)
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
