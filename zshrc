@@ -24,6 +24,7 @@ alias showme='qlmanage -p "$@" >& /dev/null'
 alias gc='git commit -m "$@"'
 alias ep='open /android/eclipse/Eclipse.app'
 alias git-compare='git difftool -y -x "colordiff -y -W $COLUMNS" | less -R'
+alias vundle='vim +BundleInstall +qall'
 
 # Config
 cdpath=(. ~ ~/code ~/code/github ~/code/bitbucket ~/code/labs)
