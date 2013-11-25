@@ -3,8 +3,6 @@ ZSH_THEME="duke"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 plugins=(rails3 sublime git git-flow-avh vagrant gitfast bundler vi-mode)
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /etc/bash_completion.d/todo
 
 export GOPATH=$HOME/.go
 
